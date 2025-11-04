@@ -30,10 +30,13 @@ public class AuthService {
     
     @Transactional
     public AuthResponse login(LoginRequest loginRequest) {
+        // 取得登入識別符（email 或 username）
+        String loginIdentifier = loginRequest.getLoginIdentifier();
+        
         // 驗證使用者憑證
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
-                        loginRequest.getUsername(),
+                        loginIdentifier,
                         loginRequest.getPassword()
                 )
         );

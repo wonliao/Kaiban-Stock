@@ -1,0 +1,144 @@
+{
+  "app": {
+    "title": "台股看板追蹤"
+  },
+  "header": {
+    "profile": "個人資料",
+    "settings": "設定",
+    "logout": "登出"
+  },
+  "sidebar": {
+    "dashboard": "儀表板",
+    "kanban": "看板",
+    "watchlist": "觀察清單",
+    "notifications": "通知",
+    "settings": "設定",
+    "help": "說明"
+  },
+  "dashboard": {
+    "title": "儀表板",
+    "totalStocks": "總股票數",
+    "watchingStocks": "觀察中",
+    "holdingStocks": "持有中",
+    "alertStocks": "警示中"
+  },
+  "kanban": {
+    "title": "股票看板",
+    "columns": {
+      "watch": "觀察",
+      "readyToBuy": "準備買進",
+      "hold": "持有",
+      "sell": "賣出",
+      "alerts": "警示"
+    },
+    "noCards": "暫無卡片",
+    "status": "狀態",
+    "note": "備註",
+    "notePlaceholder": "新增您的投資筆記...",
+    "actions": {
+      "moveCard": "移動卡片",
+      "addStock": "新增股票",
+      "removeStock": "移除股票"
+    },
+    "moveSuccess": "已將 {{stockCode}} 移至 {{column}}",
+    "updateSuccess": "卡片已更新"
+  },
+  "watchlist": {
+    "title": "觀察清單",
+    "addStock": "新增股票",
+    "stockCode": "股票代碼",
+    "stockName": "股票名稱",
+    "currentPrice": "現價",
+    "change": "漲跌",
+    "changePercent": "漲跌幅",
+    "volume": "成交量",
+    "actions": "操作",
+    "noStocks": "暫無股票資料"
+  },
+  "login": {
+    "title": "登入",
+    "subtitle": "歡迎回到台股看板",
+    "email": "電子郵件",
+    "password": "密碼",
+    "submit": "登入",
+    "submitting": "登入中...",
+    "register": "還沒有帳號？立即註冊",
+    "error": {
+      "required": "請填寫所有必填欄位",
+      "emailRequired": "電子郵件為必填",
+      "emailInvalid": "請輸入有效的電子郵件地址",
+      "passwordRequired": "密碼為必填"
+    }
+  },
+  "register": {
+    "title": "註冊",
+    "subtitle": "建立您的台股看板帳號",
+    "username": "使用者名稱",
+    "email": "電子郵件",
+    "password": "密碼",
+    "confirmPassword": "確認密碼",
+    "submit": "註冊",
+    "submitting": "註冊中...",
+    "login": "已有帳號？立即登入",
+    "error": {
+      "usernameRequired": "使用者名稱為必填",
+      "usernameMinLength": "使用者名稱至少需要3個字元",
+      "emailRequired": "電子郵件為必填",
+      "emailInvalid": "請輸入有效的電子郵件地址",
+      "passwordRequired": "密碼為必填",
+      "passwordMinLength": "密碼至少需要8個字元",
+      "passwordComplexity": "密碼必須包含大小寫字母和數字",
+      "confirmPasswordRequired": "請確認密碼",
+      "passwordMismatch": "密碼不一致"
+    }
+  },
+  "auth": {
+    "verifying": "驗證中...",
+    "accessDenied": "存取被拒絕",
+    "insufficientRole": "您沒有足夠的權限存取此頁面。",
+    "roleNotAllowed": "您的角色無權存取此頁面。",
+    "insufficientPermissions": "權限不足",
+    "missingPermissions": "您沒有執行此操作的權限。",
+    "requiredRole": "需要角色",
+    "allowedRoles": "允許的角色",
+    "yourRole": "您的角色",
+    "requiredPermissions": "需要權限",
+    "sessionExpired": "登入已過期，請重新登入",
+    "tokenRefreshFailed": "認證更新失敗，請重新登入"
+  },
+  "role": {
+    "admin": "管理員",
+    "editor": "編輯者",
+    "viewer": "檢視者",
+    "user": "使用者"
+  },
+  "common": {
+    "goBack": "返回",
+    "retry": "重試",
+    "cancel": "取消",
+    "confirm": "確認",
+    "save": "儲存",
+    "info": "詳細資訊",
+    "lastUpdated": "最後更新",
+    "loading": "載入中...",
+    "error": "錯誤",
+    "success": "成功"
+  },
+  "chart": {
+    "title": "股價走勢",
+    "placeholder": "圖表將在後續任務中實作",
+    "indicators": {
+      "title": "技術指標",
+      "ma": "移動平均",
+      "rsi": "相對強弱指標",
+      "kd": "KD指標",
+      "macd": "MACD"
+    },
+    "timeframes": {
+      "1M": "1個月",
+      "3M": "3個月",
+      "6M": "6個月",
+      "1Y": "1年"
+    }
+  }
+}

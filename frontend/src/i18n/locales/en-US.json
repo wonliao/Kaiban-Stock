@@ -1,0 +1,144 @@
+{
+  "app": {
+    "title": "Taiwan Stock Kanban Tracker"
+  },
+  "header": {
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "kanban": "Kanban",
+    "watchlist": "Watchlist",
+    "notifications": "Notifications",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalStocks": "Total Stocks",
+    "watchingStocks": "Watching",
+    "holdingStocks": "Holding",
+    "alertStocks": "Alerts"
+  },
+  "kanban": {
+    "title": "Stock Kanban",
+    "columns": {
+      "watch": "Watch",
+      "readyToBuy": "Ready to Buy",
+      "hold": "Hold",
+      "sell": "Sell",
+      "alerts": "Alerts"
+    },
+    "noCards": "No cards",
+    "status": "Status",
+    "note": "Note",
+    "notePlaceholder": "Add your investment notes...",
+    "actions": {
+      "moveCard": "Move Card",
+      "addStock": "Add Stock",
+      "removeStock": "Remove Stock"
+    },
+    "moveSuccess": "Moved {{stockCode}} to {{column}}",
+    "updateSuccess": "Card updated"
+  },
+  "watchlist": {
+    "title": "Watchlist",
+    "addStock": "Add Stock",
+    "stockCode": "Stock Code",
+    "stockName": "Stock Name",
+    "currentPrice": "Current Price",
+    "change": "Change",
+    "changePercent": "Change %",
+    "volume": "Volume",
+    "actions": "Actions",
+    "noStocks": "No stocks data"
+  },
+  "login": {
+    "title": "Login",
+    "subtitle": "Welcome back to Taiwan Stock Kanban",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Login",
+    "submitting": "Logging in...",
+    "register": "Don't have an account? Register now",
+    "error": {
+      "required": "Please fill in all required fields",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required"
+    }
+  },
+  "register": {
+    "title": "Register",
+    "subtitle": "Create your Taiwan Stock Kanban account",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Register",
+    "submitting": "Registering...",
+    "login": "Already have an account? Login now",
+    "error": {
+      "usernameRequired": "Username is required",
+      "usernameMinLength": "Username must be at least 3 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordComplexity": "Password must contain uppercase, lowercase and numbers",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordMismatch": "Passwords do not match"
+    }
+  },
+  "auth": {
+    "verifying": "Verifying...",
+    "accessDenied": "Access Denied",
+    "insufficientRole": "You don't have sufficient permissions to access this page.",
+    "roleNotAllowed": "Your role is not allowed to access this page.",
+    "insufficientPermissions": "Insufficient Permissions",
+    "missingPermissions": "You don't have permission to perform this action.",
+    "requiredRole": "Required Role",
+    "allowedRoles": "Allowed Roles",
+    "yourRole": "Your Role",
+    "requiredPermissions": "Required Permissions",
+    "sessionExpired": "Session expired, please login again",
+    "tokenRefreshFailed": "Authentication refresh failed, please login again"
+  },
+  "role": {
+    "admin": "Administrator",
+    "editor": "Editor",
+    "viewer": "Viewer",
+    "user": "User"
+  },
+  "common": {
+    "goBack": "Go Back",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "info": "Info",
+    "lastUpdated": "Last Updated",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "chart": {
+    "title": "Stock Chart",
+    "placeholder": "Chart will be implemented in future tasks",
+    "indicators": {
+      "title": "Technical Indicators",
+      "ma": "Moving Average",
+      "rsi": "RSI",
+      "kd": "KD Indicator",
+      "macd": "MACD"
+    },
+    "timeframes": {
+      "1M": "1 Month",
+      "3M": "3 Months",
+      "6M": "6 Months",
+      "1Y": "1 Year"
+    }
+  }
+}

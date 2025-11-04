@@ -47,9 +47,7 @@ public class TwseMcpClient {
         return webClient.get()
                 .uri("/v1/exchangeReport/STOCK_DAY_ALL")
                 .retrieve()
-                .onStatus(HttpStatus.NOT_FOUND::equals, 
-                    response -> Mono.error(new StockNotFoundException(stockCode)))
-                .onStatus(HttpStatus::isError,
+                .onStatus(httpStatusCode -> httpStatusCode.isError(),
                     response -> Mono.error(new TwseMcpException(
                         "TWSE_API_ERROR", 
                         "TWSE API 回傳錯誤: " + response.statusCode(), 
@@ -74,7 +72,7 @@ public class TwseMcpClient {
         return webClient.get()
                 .uri("/v1/exchangeReport/STOCK_DAY_ALL")
                 .retrieve()
-                .onStatus(HttpStatus::isError,
+                .onStatus(httpStatusCode -> httpStatusCode.isError(),
                     response -> Mono.error(new TwseMcpException(
                         "TWSE_API_ERROR", 
                         "TWSE API 回傳錯誤: " + response.statusCode(), 

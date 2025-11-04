@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(psql:*)",
+      "Bash(docker exec:*)",
+      "Bash(./mvnw spring-boot:run:*)",
+      "Bash(/usr/libexec/java_home:*)",
+      "Bash(java -version:*)",
+      "Bash(mvn spring-boot:run:*)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker logs:*)",
+      "Bash(xargs ps:*)",
+      "Bash(python3:*)",
+      "Bash(htpasswd:*)",
+      "Bash(./mvnw clean compile:*)",
+      "Bash(export JAVA_HOME=/Users/ben/.sdkman/candidates/java/17.0.10-tem:*)",
+      "Bash(xargs kill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

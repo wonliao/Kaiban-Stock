@@ -29,7 +29,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class KanbanServiceTest {
+public class KanbanServiceTest {
     
     @Mock
     private CardRepository cardRepository;

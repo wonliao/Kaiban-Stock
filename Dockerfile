@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-alpine
 
 WORKDIR /app
 
@@ -17,5 +17,5 @@ COPY src src
 RUN ./mvnw clean package -DskipTests
 
 # Run application
-EXPOSE 8080
+EXPOSE 8081
 CMD ["java", "-jar", "target/taiwan-stock-kanban-1.0.0-SNAPSHOT.jar"]

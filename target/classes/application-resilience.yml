@@ -1,0 +1,42 @@
+resilience4j:
+  circuitbreaker:
+    instances:
+      twse-mcp:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 30s
+        failureRateThreshold: 50
+        eventConsumerBufferSize: 10
+        recordExceptions:
+          - org.springframework.web.reactive.function.client.WebClientException
+          - java.util.concurrent.TimeoutException
+          - java.io.IOException
+        ignoreExceptions:
+          - com.kanban.exception.StockNotFoundException
+  
+  retry:
+    instances:
+      twse-mcp:
+        maxAttempts: 3
+        waitDuration: 1s
+        exponentialBackoffMultiplier: 2
+        retryExceptions:
+          - org.springframework.web.reactive.function.client.WebClientException
+          - java.util.concurrent.TimeoutException
+        ignoreExceptions:
+          - com.kanban.exception.StockNotFoundException
+  
+  timelimiter:
+    instances:
+      twse-mcp:
+        timeoutDuration: 10s
+        cancelRunningFuture: true
+
+  bulkhead:
+    instances:
+      twse-mcp:
+        maxConcurrentCalls: 25
+        maxWaitDuration: 0ms

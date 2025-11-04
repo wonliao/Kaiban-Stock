@@ -22,7 +22,7 @@ import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class AuditLogServiceTest {
+public class AuditLogServiceTest {
     
     @Mock
     private AuditLogRepository auditLogRepository;

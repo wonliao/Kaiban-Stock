@@ -20,13 +20,13 @@ import java.util.UUID;
 public class JwtTokenProvider {
     
     private final SecretKey jwtSecret;
-    private final int accessTokenExpirationMs;
-    private final int refreshTokenExpirationMs;
+    private final long accessTokenExpirationMs;
+    private final long refreshTokenExpirationMs;
     
     public JwtTokenProvider(
             @Value("${app.jwt.secret:mySecretKey}") String jwtSecret,
-            @Value("${app.jwt.access-token-expiration-ms:3600000}") int accessTokenExpirationMs, // 1 hour
-            @Value("${app.jwt.refresh-token-expiration-ms:2592000000}") int refreshTokenExpirationMs // 30 days
+            @Value("${app.jwt.access-token-expiration-ms:3600000}") long accessTokenExpirationMs, // 1 hour
+            @Value("${app.jwt.refresh-token-expiration-ms:2592000000}") long refreshTokenExpirationMs // 30 days
     ) {
         this.jwtSecret = Keys.hmacShaKeyFor(jwtSecret.getBytes());
         this.accessTokenExpirationMs = accessTokenExpirationMs;

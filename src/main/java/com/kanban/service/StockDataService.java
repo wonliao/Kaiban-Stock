@@ -124,10 +124,10 @@ public class StockDataService {
                 historicalDataService.saveBatchHistoricalPrices(snapshots);
                 
                 // 批次更新技術指標
-                List<String> stockCodes = snapshots.stream()
+                List<String> updatedStockCodes = snapshots.stream()
                         .map(StockSnapshot::getCode)
                         .toList();
-                technicalIndicatorService.calculateBatchIndicators(stockCodes);
+                technicalIndicatorService.calculateBatchIndicators(updatedStockCodes);
                 
                 log.info("Successfully updated {} stock snapshots", snapshots.size());
             }

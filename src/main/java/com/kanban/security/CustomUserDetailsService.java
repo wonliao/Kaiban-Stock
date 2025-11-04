@@ -17,9 +17,11 @@ public class CustomUserDetailsService implements UserDetailsService {
     
     @Override
     @Transactional
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("使用者不存在: " + username));
+    public UserDetails loadUserByUsername(String usernameOrEmail) throws UsernameNotFoundException {
+        // 先嘗試用 username 查詢，如果找不到再用 email 查詢
+        User user = userRepository.findByUsername(usernameOrEmail)
+                .orElse(userRepository.findByEmail(usernameOrEmail)
+                        .orElseThrow(() -> new UsernameNotFoundException("使用者不存在: " + usernameOrEmail)));
         
         return UserPrincipal.create(user);
     }

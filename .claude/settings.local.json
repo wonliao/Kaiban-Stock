@@ -16,7 +16,9 @@
       "Bash(htpasswd:*)",
       "Bash(./mvnw clean compile:*)",
       "Bash(export JAVA_HOME=/Users/ben/.sdkman/candidates/java/17.0.10-tem:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(./mvnw test:*)",
+      "Bash($JAVA_HOME/bin/java -version)"
     ],
     "deny": [],
     "ask": []

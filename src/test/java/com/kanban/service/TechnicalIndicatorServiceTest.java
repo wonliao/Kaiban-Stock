@@ -77,22 +77,21 @@ class TechnicalIndicatorServiceTest {
         // Arrange
         String stockCode = "2330";
         List<HistoricalPrice> historicalPrices = createMockHistoricalPrices(stockCode, 10); // 少於 20 天
-        
+
         when(historicalPriceRepository.findRecentByStockCode(stockCode, 100))
                 .thenReturn(historicalPrices);
-        when(technicalIndicatorRepository.save(any(TechnicalIndicator.class)))
-                .thenAnswer(invocation -> invocation.getArgument(0));
-        
+
         // Act
         TechnicalIndicator result = technicalIndicatorService.calculateIndicators(stockCode);
-        
+
         // Assert
         assertNotNull(result);
         assertEquals(stockCode, result.getStockCode());
         assertEquals("INSUFFICIENT_DATA", result.getCalculationSource());
         assertEquals(0, result.getDataPointsCount());
-        
-        verify(technicalIndicatorRepository).save(any(TechnicalIndicator.class));
+
+        // 資料不足時不應該儲存到資料庫
+        verify(technicalIndicatorRepository, never()).save(any(TechnicalIndicator.class));
     }
     
     @Test

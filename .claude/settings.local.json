@@ -18,7 +18,17 @@
       "Bash(export JAVA_HOME=/Users/ben/.sdkman/candidates/java/17.0.10-tem:*)",
       "Bash(xargs kill:*)",
       "Bash(./mvnw test:*)",
-      "Bash($JAVA_HOME/bin/java -version)"
+      "Bash($JAVA_HOME/bin/java -version)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbi11c2VyLWlkIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsInR5cGUiOiJBQ0NFU1MiLCJpYXQiOjE3NjIzMzAxMzQsImV4cCI6MTc2MjMzMzczNH0.Nb5TvsMoGwo9B1FG8_X9zIkIOHS9Xt5vn9SkIr5kHzAvFe9Ni5at4VAFhlkVf6AI5hDPBEofrTDmI2vpCalRkQ\")",
+      "Bash(npm run build:*)",
+      "Bash(pkill:*)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []

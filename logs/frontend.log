@@ -1,0 +1,256 @@
+
+> frontend@0.1.0 start
+> react-scripts start
+
+(node:53468) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:53468) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.149:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+No issues found.
+Compiled successfully!
+webpack compiled successfully
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+WARNING in [eslint] 
+src/components/chart/StockChart.tsx
+  Line 13:3:  'Line' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 19:3:  'Legend' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/services/chartService.ts
+  Line 60:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+ERROR in ./src/services/chartService.ts 3:0-24
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Failed to compile.
+
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+WARNING in [eslint] 
+src/components/chart/StockChart.tsx
+  Line 13:3:  'Line' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 19:3:  'Legend' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/services/chartService.ts
+  Line 60:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+ERROR in ./src/services/chartService.ts 3:0-24
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+
+webpack compiled with 1 error and 1 warning
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Compiling...
+Failed to compile.
+
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+WARNING in [eslint] 
+src/components/chart/StockChart.tsx
+  Line 13:3:  'Line' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 19:3:  'Legend' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/services/chartService.ts
+  Line 60:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+ERROR in ./src/services/chartService.ts 3:0-24
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Failed to compile.
+
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+WARNING in [eslint] 
+src/components/chart/StockChart.tsx
+  Line 13:3:  'Line' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 19:3:  'Legend' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/services/chartService.ts
+  Line 60:1:  Assign instance to a variable before exporting as module default  import/no-anonymous-default-export
+
+ERROR in ./src/services/chartService.ts 3:0-24
+Module not found: Error: Can't resolve './api' in '/Users/ben/side_project/JAVA/Kaiban-Stock/frontend/src/services'
+
+webpack compiled with 1 error and 1 warning
+ERROR in src/services/chartService.ts:1:17
+TS2307: Cannot find module './api' or its corresponding type declarations.
+  > 1 | import api from './api';
+      |                 ^^^^^^^
+    2 | import { ChartData, ChartPeriod } from '../types/chart';
+    3 |
+    4 | class ChartService {
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/chart/StockChart.tsx
+  Line 13:3:  'Line' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 19:3:  'Legend' is defined but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/chart/StockChart.tsx
+  Line 13:3:  'Line' is defined but never used    @typescript-eslint/no-unused-vars
+  Line 19:3:  'Legend' is defined but never used  @typescript-eslint/no-unused-vars
+
+webpack compiled with 1 warning
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+No issues found.

@@ -35,64 +35,67 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2025-11-04 15:11:30 [main] INFO  [] c.k.TaiwanStockKanbanApplication - Starting TaiwanStockKanbanApplication using Java 17.0.10 with PID 75163 (/Users/ben/side_project/JAVA/Kaiban-Stock/target/classes started by ben in /Users/ben/side_project/JAVA/Kaiban-Stock)
-2025-11-04 15:11:30 [main] DEBUG [] c.k.TaiwanStockKanbanApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-11-04 15:11:30 [main] INFO  [] c.k.TaiwanStockKanbanApplication - The following 1 profile is active: "dev"
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192 ms. Found 7 JPA repository interfaces.
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.AuditLogRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.CardRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.HistoricalPriceRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.StockSnapshotRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.TechnicalIndicatorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.WatchlistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-11-04 15:11:31 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2025-11-04 15:11:31 [main] INFO  [] o.s.cloud.context.scope.GenericScope - BeanFactory id=565d2ba3-e03f-3031-ad6c-3aa864484c8a
-2025-11-04 15:11:32 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-2025-11-04 15:11:32 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-11-04 15:11:32 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-11-04 15:11:32 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-11-04 15:11:32 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1916 ms
-2025-11-04 15:11:32 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-11-04 15:11:32 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62d6ac
-2025-11-04 15:11:32 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-11-04 15:11:32 [main] INFO  [] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
-2025-11-04 15:11:32 [main] INFO  [] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
-2025-11-04 15:11:32 [main] INFO  [] o.f.c.i.license.VersionPrinter - 
-2025-11-04 15:11:32 [main] INFO  [] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kanban_dev (PostgreSQL 15.14)
-2025-11-04 15:11:32 [main] INFO  [] o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.020s)
-2025-11-04 15:11:32 [main] INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
-2025-11-04 15:11:32 [main] INFO  [] o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
-2025-11-04 15:11:33 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-04 15:11:33 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-11-04 15:11:33 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-11-04 15:11:33 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-04 15:11:33 [main] WARN  [] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-11-04 15:11:33 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-04 15:11:33 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-04 15:11:34 [main] DEBUG [] c.k.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
-2025-11-04 15:11:34 [main] INFO  [] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-11-04 15:11:34 [main] ERROR [] i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2025-11-04 15:11:35 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-04 15:11:35 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
-2025-11-04 15:11:35 [main] INFO  [] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a848bb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7049e176, org.springframework.security.web.context.SecurityContextHolderFilter@7ee93eda, org.springframework.security.web.header.HeaderWriterFilter@43adbe93, org.springframework.web.filter.CorsFilter@728685c8, org.springframework.security.web.authentication.logout.LogoutFilter@5736508f, com.kanban.security.JwtAuthenticationFilter@6d3b59e2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@677dfaf0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53acdc6e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b41dca7, org.springframework.security.web.session.SessionManagementFilter@55dfdcd0, org.springframework.security.web.access.ExceptionTranslationFilter@52c0568c, org.springframework.security.web.access.intercept.AuthorizationFilter@72d28f43]
-2025-11-04 15:11:36 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
-2025-11-04 15:11:36 [main] INFO  [] c.k.TaiwanStockKanbanApplication - Started TaiwanStockKanbanApplication in 6.58 seconds (process running for 6.916)
-2025-11-04 15:11:44 [http-nio-8081-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-04 15:11:44 [http-nio-8081-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-11-04 15:11:44 [http-nio-8081-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2025-11-04 15:11:44 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /actuator/health
-2025-11-04 15:11:44 [http-nio-8081-exec-1] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-2025-11-04 15:11:44 [http-nio-8081-exec-1] WARN  [] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/actuator/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
-2025-11-04 15:11:44 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /actuator/health
-2025-11-04 15:11:56 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
-2025-11-04 15:11:56 [http-nio-8081-exec-2] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-2025-11-04 15:11:56 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
-2025-11-04 15:11:56 [http-nio-8081-exec-2] INFO  [] c.kanban.controller.AuthController - 登入請求: null
+2025-11-06 09:55:35 [main] INFO  [] c.k.TaiwanStockKanbanApplication - Starting TaiwanStockKanbanApplication using Java 17.0.10 with PID 88901 (/Users/ben/side_project/JAVA/Kaiban-Stock/target/classes started by ben in /Users/ben/side_project/JAVA/Kaiban-Stock)
+2025-11-06 09:55:35 [main] DEBUG [] c.k.TaiwanStockKanbanApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-06 09:55:35 [main] INFO  [] c.k.TaiwanStockKanbanApplication - The following 1 profile is active: "dev"
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 7 JPA repository interfaces.
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.AuditLogRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.CardRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.HistoricalPriceRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.StockSnapshotRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.TechnicalIndicatorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.kanban.repository.WatchlistRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-11-06 09:55:36 [main] INFO  [] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-11-06 09:55:36 [main] INFO  [] o.s.cloud.context.scope.GenericScope - BeanFactory id=baf2573f-a413-3c4f-be15-33d3fd6922e8
+2025-11-06 09:55:37 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-06 09:55:37 [main] INFO  [] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-06 09:55:37 [main] INFO  [] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-06 09:55:37 [main] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-06 09:55:37 [main] INFO  [] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1393 ms
+2025-11-06 09:55:37 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-06 09:55:37 [main] INFO  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@423762ae
+2025-11-06 09:55:37 [main] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-06 09:55:37 [main] INFO  [] o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2025-11-06 09:55:37 [main] INFO  [] o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2025-11-06 09:55:37 [main] INFO  [] o.f.c.i.license.VersionPrinter - 
+2025-11-06 09:55:37 [main] INFO  [] org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kanban_dev (PostgreSQL 15.14)
+2025-11-06 09:55:37 [main] INFO  [] o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.020s)
+2025-11-06 09:55:37 [main] INFO  [] o.f.core.internal.command.DbMigrate - Current version of schema "public": 3
+2025-11-06 09:55:37 [main] INFO  [] o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-11-06 09:55:37 [main] INFO  [] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 09:55:37 [main] INFO  [] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-06 09:55:37 [main] INFO  [] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-06 09:55:37 [main] INFO  [] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-06 09:55:37 [main] WARN  [] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-06 09:55:38 [main] INFO  [] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-06 09:55:38 [main] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 09:55:38 [main] DEBUG [] c.k.security.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-11-06 09:55:39 [main] INFO  [] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-06 09:55:39 [main] ERROR [] i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-11-06 09:55:39 [main] WARN  [] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 09:55:40 [main] INFO  [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-11-06 09:55:40 [main] INFO  [] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@139ea015, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@505942aa, org.springframework.security.web.context.SecurityContextHolderFilter@7a6eb4bb, org.springframework.security.web.header.HeaderWriterFilter@667ea550, org.springframework.web.filter.CorsFilter@263cd0e2, org.springframework.security.web.authentication.logout.LogoutFilter@6aa70b66, com.kanban.security.JwtAuthenticationFilter@53d0cf4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c01fcbc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1270c8ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b63fd3e, org.springframework.security.web.session.SessionManagementFilter@5733df81, org.springframework.security.web.access.ExceptionTranslationFilter@62733827, org.springframework.security.web.access.intercept.AuthorizationFilter@35c395cc]
+2025-11-06 09:55:41 [main] INFO  [] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-11-06 09:55:41 [main] INFO  [] c.k.TaiwanStockKanbanApplication - Started TaiwanStockKanbanApplication in 5.79 seconds (process running for 6.135)
+2025-11-06 09:55:51 [http-nio-8081-exec-1] INFO  [] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-06 09:55:51 [http-nio-8081-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-06 09:55:51 [http-nio-8081-exec-1] INFO  [] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-11-06 09:55:51 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /actuator/health
+2025-11-06 09:55:51 [http-nio-8081-exec-1] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-06 09:55:51 [http-nio-8081-exec-1] WARN  [] o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/actuator/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-06 09:55:51 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /actuator/health
+2025-11-06 09:56:04 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 09:56:04 [http-nio-8081-exec-2] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-06 09:56:04 [http-nio-8081-exec-2] ERROR [] c.k.s.JwtAuthenticationEntryPoint - 未授權錯誤: Full authentication is required to access this resource
+2025-11-06 09:56:14 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-11-06 09:56:14 [http-nio-8081-exec-3] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-06 09:56:14 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-11-06 09:56:15 [http-nio-8081-exec-3] INFO  [] c.kanban.controller.AuthController - 登入請求: null
 Hibernate: 
     select
         u1_0.id,
@@ -127,8 +130,575 @@ Hibernate:
         users u1_0 
     where
         u1_0.email=?
-2025-11-04 15:11:56 [http-nio-8081-exec-2] DEBUG [] o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
-2025-11-04 15:11:56 [http-nio-8081-exec-2] INFO  [] com.kanban.service.AuthService - 使用者登入成功: admin
+2025-11-06 09:56:15 [http-nio-8081-exec-3] DEBUG [] o.s.s.a.d.DaoAuthenticationProvider - Failed to find user 'admin@example.com'
+2025-11-06 09:59:05 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 09:59:05 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 09:59:05 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 09:59:07 [http-nio-8081-exec-6] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 09:59:07 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 09:59:07 [http-nio-8081-exec-6] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 09:59:07 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 09:59:07 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=111.473313977625407500, changePercent=1.3400, volume=47003573, openPrice=111.26431604190047670046592408679366400, highPrice=113.100251795451128500, lowPrice=109.783082857427970100, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T09:59:08.341308, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 09:59:08 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=777.24757639359776000, changePercent=-2.8400, volume=16070243, openPrice=775.356723724733215365483707863380880, highPrice=777.37594066424343780, lowPrice=769.71782918380179800, previousClose=800.00000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T09:59:08.800201, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 09:59:08 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 09:59:08 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 09:59:09 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=566.5205722300044884600, changePercent=-2.3200, volume=33172810, openPrice=573.30296037556192591617033687889984000, highPrice=573.5669674074808014600, lowPrice=563.2060321761452278600, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T09:59:09.024070, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 09:59:09 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 09:59:09 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 09:59:09 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=114.438409463540386400, changePercent=4.0300, volume=29109282, openPrice=119.8992260750782965689808948200368000, highPrice=124.349901726680679400, lowPrice=106.563061940304413400, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T09:59:09.271785, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 09:59:09 [http-nio-8081-exec-8] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 09:59:09 [http-nio-8081-exec-6] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 09:59:09 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 09:59:09 [http-nio-8081-exec-5] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 09:59:09 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-6] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+2025-11-06 09:59:09 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 09:59:09 [http-nio-8081-exec-5] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=787.349641975180088000, changePercent=-1.5800, volume=32980931, openPrice=789.9835979889094623083141413776130600, highPrice=790.213037523400653500, lowPrice=784.775990135089146400, previousClose=800.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T09:59:09.498216, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 09:59:09 [http-nio-8081-exec-8] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 09:59:09 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 09:59:09 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 09:59:09 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 09:59:09 [http-nio-8081-exec-2] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 09:59:09 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 09:59:09 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-2] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 09:59:09 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 09:59:09 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=605.7655832004878997200, changePercent=4.4400, volume=45565966, openPrice=607.58835276345655355601974232897000000, highPrice=608.5082371304029717200, lowPrice=603.0189652821014217200, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T09:59:09.790616, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 09:59:09 [http-nio-8081-exec-8] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 09:59:09 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 10:09:08 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/refresh
+2025-11-06 10:09:08 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/refresh
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:08 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:08 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/refresh
+2025-11-06 10:09:09 [http-nio-8081-exec-1] INFO  [] c.kanban.controller.AuthController - Token 刷新請求
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:09 [http-nio-8081-exec-1] INFO  [] com.kanban.service.AuthService - Token 刷新成功: admin
 Hibernate: 
     update
         users 
@@ -144,10 +714,842 @@ Hibernate:
         username=? 
     where
         id=?
-2025-11-04 15:12:27 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
-2025-11-04 15:12:27 [http-nio-8081-exec-4] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-2025-11-04 15:12:27 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
-2025-11-04 15:12:27 [http-nio-8081-exec-4] INFO  [] c.kanban.controller.AuthController - 登入請求: null
+2025-11-06 10:09:10 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 10:09:10 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 10:09:10 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+2025-11-06 10:09:10 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:10 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:10 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:10 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:10 [http-nio-8081-exec-5] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 10:09:10 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 10:09:10 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+2025-11-06 10:09:10 [http-nio-8081-exec-5] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 10:09:10 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 10:09:10 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:10 [http-nio-8081-exec-3] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:10 [http-nio-8081-exec-10] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:10 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:10 [http-nio-8081-exec-10] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 10:09:10 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-3] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 10:09:10 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:10 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=106.194680434627049100, changePercent=-3.4600, volume=49069811, openPrice=109.3139167100889928334067576885928000, highPrice=111.519832231746125600, lowPrice=105.013228902571730400, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T10:09:10.564681, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 10:09:10 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=820.839205188961768000, changePercent=2.6000, volume=25855635, openPrice=821.7469544187732362575289476675970000, highPrice=821.852127613933684000, lowPrice=812.314566599569919000, previousClose=800.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T10:09:10.872759, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 10:09:10 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 10:09:10 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 10:09:11 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=578.1382357894545049400, changePercent=-0.3200, volume=26002446, openPrice=576.193880961096492883122716503360528000, highPrice=584.5388216455521043400, lowPrice=574.9669041471537719400, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T10:09:11.006666, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 10:09:11 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 10:09:11 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 10:09:11 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:11 [http-nio-8081-exec-7] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:11 [http-nio-8081-exec-8] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:11 [http-nio-8081-exec-5] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:11 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-7] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+2025-11-06 10:09:11 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-5] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 10:09:11 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-8] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 10:09:11 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:11 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 10:09:11 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:11 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 10:09:11 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 10:09:11 [http-nio-8081-exec-3] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 10:09:11 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 10:09:11 [http-nio-8081-exec-3] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=107.703470231215178100, changePercent=-2.0900, volume=50919135, openPrice=115.0011855782531487172155880114424000, highPrice=117.318228073365898100, lowPrice=105.641440831499026100, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T10:09:11.213299, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 10:09:11 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=810.9783059589091624000, changePercent=1.3700, volume=31580268, openPrice=809.984071703271947512471719574562722000, highPrice=811.5055526290465603000, lowPrice=809.9215368841083572000, previousClose=800.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T10:09:11.373729, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 10:09:11 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=569.421651601681107400, changePercent=-1.8200, volume=49103907, openPrice=564.2929545359559662030682295848517600, highPrice=571.615698942528220000, lowPrice=561.422418774371420400, previousClose=580.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T10:09:11.596351, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 10:09:11 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 10:09:11 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 11:04:09 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/logout
+2025-11-06 11:04:09 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/logout
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 11:04:09 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 11:04:09 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/logout
+2025-11-06 11:04:09 [http-nio-8081-exec-1] INFO  [] c.kanban.controller.AuthController - 登出請求: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 11:04:09 [http-nio-8081-exec-1] INFO  [] com.kanban.service.AuthService - 使用者登出成功: admin
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        is_active=?,
+        last_login_at=?,
+        password_hash=?,
+        refresh_token=?,
+        refresh_token_expires_at=?,
+        role=?,
+        updated_at=?,
+        username=? 
+    where
+        id=?
+2025-11-06 12:48:11 [HikariPool-1 housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s347ms), soft-evicting connections from pool.
+2025-11-06 14:24:41 [HikariPool-1 housekeeper] WARN  [] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s28ms), soft-evicting connections from pool.
+2025-11-06 15:48:14 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-11-06 15:48:14 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-11-06 15:48:14 [http-nio-8081-exec-5] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-06 15:48:15 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-11-06 15:48:15 [http-nio-8081-exec-5] INFO  [] c.kanban.controller.AuthController - 登入請求: null
 Hibernate: 
     select
         u1_0.id,
@@ -182,8 +1584,8 @@ Hibernate:
         users u1_0 
     where
         u1_0.email=?
-2025-11-04 15:12:27 [http-nio-8081-exec-4] DEBUG [] o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
-2025-11-04 15:12:27 [http-nio-8081-exec-4] INFO  [] com.kanban.service.AuthService - 使用者登入成功: admin
+2025-11-06 15:48:15 [http-nio-8081-exec-5] DEBUG [] o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-11-06 15:48:15 [http-nio-8081-exec-5] INFO  [] com.kanban.service.AuthService - 使用者登入成功: admin
 Hibernate: 
     update
         users 
@@ -199,11 +1601,9 @@ Hibernate:
         username=? 
     where
         id=?
-2025-11-04 15:12:32 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
-2025-11-04 15:12:32 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
-2025-11-04 15:12:32 [http-nio-8081-exec-7] DEBUG [] o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
-2025-11-04 15:12:32 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
-2025-11-04 15:12:32 [http-nio-8081-exec-7] INFO  [] c.kanban.controller.AuthController - 登入請求: null
+2025-11-06 15:48:15 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 15:48:15 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
 Hibernate: 
     select
         u1_0.id,
@@ -220,7 +1620,127 @@ Hibernate:
     from
         users u1_0 
     where
-        u1_0.username=?
+        u1_0.id=?
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=105.440109448686113200, changePercent=-4.1500, volume=40186950, openPrice=105.012570793450439660520742663260500, highPrice=108.402197818160008700, lowPrice=99.159028068509210200, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T15:48:15.709964, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 15:48:15 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=794.3470497562032760000, changePercent=-0.7100, volume=2776015, openPrice=795.38046589362106666605169119178324000, highPrice=797.7211924004066977000, lowPrice=792.9011781526883239000, previousClose=800.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T15:48:15.904390, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 15:48:15 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 15:48:15 [http-nio-8081-exec-6] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 15:48:16 [http-nio-8081-exec-6] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=568.860066606877182400, changePercent=-1.9200, volume=31191031, openPrice=566.1989204991071116148605225661380000, highPrice=571.377853388392446400, lowPrice=561.733844223867616400, previousClose=580.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T15:48:16.019510, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 15:48:16 [http-nio-8081-exec-6] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 15:48:16 [http-nio-8081-exec-6] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
 Hibernate: 
     select
         u1_0.id,
@@ -237,9 +1757,586 @@ Hibernate:
     from
         users u1_0 
     where
-        u1_0.email=?
-2025-11-04 15:12:32 [http-nio-8081-exec-7] DEBUG [] o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
-2025-11-04 15:12:32 [http-nio-8081-exec-7] INFO  [] com.kanban.service.AuthService - 使用者登入成功: admin
+        u1_0.id=?
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 15:48:16 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 15:48:16 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-7] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-6] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-7] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 15:48:16 [http-nio-8081-exec-6] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+2025-11-06 15:48:16 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 15:48:16 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 15:48:16 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-5] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-3] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:16 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 15:48:16 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 15:48:16 [http-nio-8081-exec-5] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 15:48:16 [http-nio-8081-exec-3] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=112.126736139187380600, changePercent=1.9300, volume=4384346, openPrice=113.2872683219533030395989591144902320, highPrice=114.130811090994960200, lowPrice=112.026369576834832120, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T15:48:16.188541, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 15:48:16 [http-nio-8081-exec-8] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=785.2096102002247864000, changePercent=-1.8500, volume=13093181, openPrice=786.487418170281584763775979146406425000, highPrice=790.2012724674454079000, lowPrice=782.7931155853165908000, previousClose=800.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T15:48:16.483254, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 15:48:16 [http-nio-8081-exec-8] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=602.331724024326752400, changePercent=3.8500, volume=22025336, openPrice=604.3280362359172174936465551258168800, highPrice=605.559000364175247400, lowPrice=599.315969109677943000, previousClose=580.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T15:48:16.623075, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 15:48:16 [http-nio-8081-exec-8] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 15:48:16 [http-nio-8081-exec-8] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 15:48:20 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=30
+2025-11-06 15:48:20 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=30
+2025-11-06 15:48:20 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=30
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 15:48:20 [http-nio-8081-exec-3] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:20 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=30
+2025-11-06 15:48:20 [http-nio-8081-exec-3] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 30
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 15:48:20 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=30
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 15:48:20 [http-nio-8081-exec-8] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:20 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=30
+2025-11-06 15:48:20 [http-nio-8081-exec-8] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 30
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 15:48:29 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=30
+2025-11-06 15:48:29 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=30
+2025-11-06 15:48:29 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=30
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 15:48:29 [http-nio-8081-exec-7] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:29 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=30
+2025-11-06 15:48:29 [http-nio-8081-exec-7] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 30
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 15:48:29 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=30
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 15:48:29 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 15:48:29 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=30
+2025-11-06 15:48:29 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 30
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/refresh
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing POST /api/auth/refresh
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured POST /api/auth/refresh
+2025-11-06 16:43:15 [http-nio-8081-exec-3] INFO  [] c.kanban.controller.AuthController - Token 刷新請求
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:15 [http-nio-8081-exec-3] INFO  [] com.kanban.service.AuthService - Token 刷新成功: admin
 Hibernate: 
     update
         users 
@@ -255,19 +2352,1305 @@ Hibernate:
         username=? 
     where
         id=?
-2025-11-04 15:15:02 [SpringApplicationShutdownHook] INFO  [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-04 15:15:02 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-11-04 15:15:02 [SpringApplicationShutdownHook] INFO  [] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  03:35 min
-[INFO] Finished at: 2025-11-04T15:15:02+08:00
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.0:run (default-cli) on project taiwan-stock-kanban: Process terminated with exit code: 143 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+2025-11-06 16:43:15 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 16:43:15 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 16:43:15 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 16:43:15 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+2025-11-06 16:43:15 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 16:43:15 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-10] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-7] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 16:43:15 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:15 [http-nio-8081-exec-10] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 16:43:15 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+2025-11-06 16:43:15 [http-nio-8081-exec-7] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=110.3261606674753177300, changePercent=0.3000, volume=8354295, openPrice=112.01742172860218717533526603653030000, highPrice=118.3833275847887077300, lowPrice=107.3695920687320467300, previousClose=110.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:43:15.975519, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:43:15 [http-nio-8081-exec-3] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 16:43:15 [http-nio-8081-exec-3] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=822.677746764568712000, changePercent=2.8300, volume=48096738, openPrice=818.4111124383750035380873463291178000, highPrice=828.526517723099874000, lowPrice=812.885819291596507000, previousClose=800.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:43:16.246961, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:43:16 [http-nio-8081-exec-3] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=585.1172855564799455000, changePercent=0.8800, volume=50013029, openPrice=587.99773264410603845915063617762340000, highPrice=588.9055700814407695000, lowPrice=580.4330655753060155000, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:43:16.413194, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:43:16 [http-nio-8081-exec-3] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:43:16 [http-nio-8081-exec-3] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 16:43:16 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:16 [http-nio-8081-exec-6] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-8] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-5] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-8] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 16:43:16 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-6] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:43:16 [http-nio-8081-exec-5] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:43:16 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:43:16 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:43:16 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 16:43:16 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+2025-11-06 16:43:16 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 16:43:16 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=110.19213063703459154100, changePercent=0.1700, volume=29227155, openPrice=115.302179589915955832801805056550980000, highPrice=116.29007743056806104100, lowPrice=106.20787155209965714100, previousClose=110.00000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:43:16.661774, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:43:16 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=782.5643912396589544000, changePercent=-2.1800, volume=46879468, openPrice=775.415076690922888944878291368651992000, highPrice=783.8894769813400246000, lowPrice=774.5676868519238559000, previousClose=800.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:43:16.826617, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:43:16 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=567.1553840140242009400, changePercent=-2.2100, volume=50832134, openPrice=565.82872917852245338904136538863295000, highPrice=576.5960355842420529400, lowPrice=559.1895057359270094400, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:43:16.951099, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:43:16 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:43:16 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:44:46 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 16:44:46 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/kanban/cards
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=115.446898958945844400, changePercent=4.9500, volume=11953360, openPrice=124.1596773128848102692463719462912000, highPrice=124.910963225087222400, lowPrice=108.821188290793718400, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:44:46.658944, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:44:46 [http-nio-8081-exec-4] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=831.1766379276002592000, changePercent=3.9000, volume=32372345, openPrice=837.03712488531222538242638658809664000, highPrice=839.7651409350127642000, lowPrice=827.8110559132873538000, previousClose=800.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:44:46.818966, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:44:46 [http-nio-8081-exec-4] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=578.2567712372004803000, changePercent=-0.3000, volume=7814264, openPrice=574.83937636509201964422801192964440000, highPrice=585.4265522115803343000, lowPrice=571.4674226133205113000, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:44:46.962953, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:44:46 [http-nio-8081-exec-4] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:44:46 [http-nio-8081-exec-4] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/kanban/cards
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/kanban/cards
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] c.kanban.controller.KanbanController - GET /api/kanban/cards - user: admin-user-id, query: null, status: null, page: 0, size: 50
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.KanbanService - Getting cards for user: admin-user-id with request: CardSearchRequest(query=null, status=null, sortBy=updatedAt, sortDirection=DESC, page=0, size=50)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.created_at,
+        c1_0.note,
+        c1_0.status,
+        c1_0.stock_code,
+        c1_0.stock_name,
+        c1_0.updated_at,
+        c1_0.user_id,
+        c1_0.watchlist_id 
+    from
+        cards c1_0 
+    where
+        c1_0.user_id=? 
+        and c1_0.status!=? 
+    order by
+        c1_0.updated_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2317
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2317
+2025-11-06 16:44:46 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2317
+2025-11-06 16:44:47 [http-nio-8081-exec-7] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-8] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-6] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2330?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-5] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2454?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-3] DEBUG [] o.s.security.web.FilterChainProxy - Securing OPTIONS /api/chart/stocks/2317?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-9] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:44:47 [http-nio-8081-exec-9] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-9] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2317?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2454?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Securing GET /api/chart/stocks/2330?days=7
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.last_login_at,
+        u1_0.password_hash,
+        u1_0.refresh_token,
+        u1_0.refresh_token_expires_at,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:47 [http-nio-8081-exec-10] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] c.k.security.JwtAuthenticationFilter - 設定使用者認證: admin
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2317?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-10] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2330?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-1] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2317 - user: admin-user-id, days: 7
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] o.s.security.web.FilterChainProxy - Secured GET /api/chart/stocks/2454?days=7
+2025-11-06 16:44:47 [http-nio-8081-exec-10] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2330 - user: admin-user-id, days: 7
+2025-11-06 16:44:47 [http-nio-8081-exec-4] DEBUG [] c.kanban.controller.ChartController - GET /api/chart/stocks/2454 - user: admin-user-id, days: 7
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        hp1_0.id,
+        hp1_0.adjusted_close,
+        hp1_0.close_price,
+        hp1_0.data_source,
+        hp1_0.high_price,
+        hp1_0.low_price,
+        hp1_0.open_price,
+        hp1_0.stock_code,
+        hp1_0.trade_date,
+        hp1_0.volume 
+    from
+        historical_prices hp1_0 
+    where
+        hp1_0.stock_code=? 
+    order by
+        hp1_0.trade_date desc 
+    fetch
+        first ? rows only
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2317: StockSnapshot(code=2317, name=鴻海, currentPrice=112.589960294780369500, changePercent=2.3500, volume=17093037, openPrice=112.80924178144484259103762586180227200, highPrice=120.874904101050066500, lowPrice=111.064284871882621900, previousClose=110.000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:44:47.145809, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:44:47 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2317: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2317
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2454
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2454
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2454
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2454: StockSnapshot(code=2454, name=聯發科, currentPrice=803.38562822553287320000, changePercent=0.4200, volume=20092718, openPrice=811.02198466316966165711283194166120000, highPrice=812.54034912018113520000, lowPrice=800.24499056239127880000, previousClose=800.00000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:44:47.299344, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:44:47 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2454: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2454
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting snapshot for stock: 2330
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockCacheService - Cache miss for stock snapshot: 2330
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.client.MockTwseMcpClient - Mock: Fetching stock data for code: 2330
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] c.kanban.service.StockDataConverter - Converted TWSE data to snapshot for 2330: StockSnapshot(code=2330, name=台積電, currentPrice=575.2879085389596332200, changePercent=-0.8100, volume=18293412, openPrice=577.83509181424067809407413435686122000, highPrice=581.1046141769638062200, lowPrice=573.1041359969616296200, previousClose=580.0000000000000000000, ma5=null, ma10=null, ma20=null, ma60=null, rsi=null, kdK=null, kdD=null, updatedAt=2025-11-06T16:44:47.550049, dataSource=TWSE-MCP, delayMinutes=15)
+2025-11-06 16:44:47 [http-nio-8081-exec-2] ERROR [] com.kanban.service.StockDataService - Error fetching stock data for 2330: Could not write JSON: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.kanban.domain.entity.StockSnapshot["updatedAt"])
+2025-11-06 16:44:47 [http-nio-8081-exec-2] DEBUG [] com.kanban.service.StockDataService - Getting fallback snapshot for 2330
+Hibernate: 
+    select
+        ss1_0.stock_code,
+        ss1_0.change_percent,
+        ss1_0.current_price,
+        ss1_0.data_source,
+        ss1_0.delay_minutes,
+        ss1_0.high_price,
+        ss1_0.kd_d,
+        ss1_0.kd_k,
+        ss1_0.low_price,
+        ss1_0.ma10,
+        ss1_0.ma20,
+        ss1_0.ma5,
+        ss1_0.ma60,
+        ss1_0.name,
+        ss1_0.open_price,
+        ss1_0.previous_close,
+        ss1_0.rsi,
+        ss1_0.updated_at,
+        ss1_0.volume 
+    from
+        stock_snapshots ss1_0 
+    where
+        ss1_0.stock_code=?

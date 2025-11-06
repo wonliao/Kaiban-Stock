@@ -4,11 +4,15 @@ com/kanban/service/KanbanServiceTest.class
 com/kanban/controller/KanbanControllerTest$CardStatusTransitionTests.class
 com/kanban/service/KanbanPaginationSearchTest$StatusFilterTests.class
 com/kanban/controller/KanbanControllerTest$PaginationAndSearchTests.class
+com/kanban/service/RuleExecutionServiceTest.class
+com/kanban/service/NotificationServiceTest.class
 com/kanban/service/KanbanAuditIntegrationTest$AuditTrailIntegrityTests.class
 com/kanban/TaiwanStockKanbanApplicationTests.class
 com/kanban/service/WatchlistServiceTest.class
 com/kanban/service/KanbanPaginationSearchTest.class
+com/kanban/service/RuleEvaluationServiceTest.class
 com/kanban/service/KanbanPaginationSearchTest$CombinedSearchTests.class
+com/kanban/service/RuleServiceTest.class
 com/kanban/service/KanbanPaginationSearchTest$SearchTests.class
 com/kanban/service/KanbanPaginationSearchTest$PaginationTests.class
 com/kanban/service/AuditLogServiceTest.class

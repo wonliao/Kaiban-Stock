@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.kanban.client.TwseMcpClientTest
+Test set: com.kanban.service.RuleServiceTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 s -- in com.kanban.client.TwseMcpClientTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s -- in com.kanban.service.RuleServiceTest

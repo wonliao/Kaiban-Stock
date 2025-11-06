@@ -20,10 +20,10 @@ import {
   Close,
   TrendingUp,
   TrendingDown,
-  ShowChart,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import { Card as CardType } from '../../store/slices/kanbanSlice';
+import StockChart from '../chart/StockChart';
 
 interface CardDetailModalProps {
   open: boolean;
@@ -185,30 +185,14 @@ const CardDetailModal: React.FC<CardDetailModalProps> = ({
 
           <Divider />
 
-          {/* Mini Chart Placeholder */}
+          {/* Stock Chart */}
           <Box>
-            <Typography variant="h6" gutterBottom>
-              {t('chart.title', '股價走勢')}
-            </Typography>
-            <Box
-              sx={{
-                height: 200,
-                backgroundColor: 'grey.100',
-                borderRadius: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                border: '1px dashed',
-                borderColor: 'grey.300',
-              }}
-            >
-              <Box sx={{ textAlign: 'center', color: 'text.secondary' }}>
-                <ShowChart sx={{ fontSize: 48, mb: 1 }} />
-                <Typography variant="body2">
-                  {t('chart.placeholder', '圖表將在後續任務中實作')}
-                </Typography>
-              </Box>
-            </Box>
+            <StockChart
+              stockCode={card.stockCode}
+              stockName={card.stockName}
+              defaultPeriod="30d"
+              height={300}
+            />
           </Box>
 
           <Divider />

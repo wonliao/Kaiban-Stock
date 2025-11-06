@@ -41,6 +41,14 @@ spring:
     type: redis
     redis:
       time-to-live: 60000 # 1 minute default TTL
+
+# InfluxDB Configuration
+influxdb:
+  url: ${INFLUXDB_URL:http://localhost:8086}
+  token: ${INFLUXDB_TOKEN:}
+  org: ${INFLUXDB_ORG:kanban}
+  bucket: ${INFLUXDB_BUCKET:stock_data}
+  retention-days: 90
       
 server:
   port: 8081
@@ -61,6 +69,15 @@ management:
     health:
       show-details: when-authorized
       
+# SSE Configuration
+sse:
+  max-connections: 1000
+  auto-scale:
+    enabled: true
+    threshold: 0.8
+  heartbeat:
+    interval: 30000
+
 # Audit Configuration
 kanban:
   audit:

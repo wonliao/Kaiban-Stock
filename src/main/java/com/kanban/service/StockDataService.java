@@ -33,6 +33,7 @@ public class StockDataService {
     private final StockSnapshotRepository stockSnapshotRepository;
     private final TechnicalIndicatorService technicalIndicatorService;
     private final HistoricalDataService historicalDataService;
+    private final InfluxDBService influxDBService;
     
     @Value("${twse.mcp.mock.enabled:false}")
     private boolean mockEnabled;
@@ -70,7 +71,10 @@ public class StockDataService {
                 // 4. 儲存到資料庫
                 saveSnapshotToDatabase(snapshot);
                 
-                // 5. 儲存歷史資料並更新技術指標
+                // 5. 儲存到 InfluxDB 時序資料庫
+                influxDBService.writeStockSnapshot(snapshot);
+                
+                // 6. 儲存歷史資料並更新技術指標
                 historicalDataService.saveHistoricalPriceFromSnapshot(snapshot);
                 updateTechnicalIndicators(stockCode, snapshot);
             }
@@ -119,6 +123,9 @@ public class StockDataService {
                 
                 // 批次儲存到資料庫
                 stockSnapshotRepository.saveAll(snapshots);
+                
+                // 批次儲存到 InfluxDB
+                influxDBService.writeBatchStockSnapshots(snapshots);
                 
                 // 批次儲存歷史資料
                 historicalDataService.saveBatchHistoricalPrices(snapshots);

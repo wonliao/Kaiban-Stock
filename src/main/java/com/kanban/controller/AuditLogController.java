@@ -3,6 +3,7 @@ package com.kanban.controller;
 import com.kanban.domain.entity.AuditLog;
 import com.kanban.dto.AuditLogDto;
 import com.kanban.dto.PagedResponse;
+import com.kanban.security.UserPrincipal;
 import com.kanban.service.AuditLogService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -33,7 +34,8 @@ public class AuditLogController {
             @RequestParam(defaultValue = "50") int size,
             Authentication authentication) {
         
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("GET /api/audit/logs - user: {}, page: {}, size: {}", userId, page, size);
         
         // Validate page size
@@ -80,7 +82,8 @@ public class AuditLogController {
             @RequestParam(defaultValue = "50") int size,
             Authentication authentication) {
         
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("GET /api/audit/cards/{}/logs - user: {}, page: {}, size: {}", cardId, userId, page, size);
         
         // Validate page size
@@ -123,7 +126,8 @@ public class AuditLogController {
     @PostMapping("/archive")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> archiveOldLogs(Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.info("POST /api/audit/archive - admin user: {}", userId);
         
         // Archive logs older than 90 days

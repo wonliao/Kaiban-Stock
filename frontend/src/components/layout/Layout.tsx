@@ -18,12 +18,12 @@ const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle, isDarkMode }) 
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <CssBaseline />
-      
-      {/* Header */}
+
+      {/* Header - Fixed at top */}
       <Header onThemeToggle={onThemeToggle} isDarkMode={isDarkMode} />
-      
+
       {/* Menu Button for Mobile */}
       <IconButton
         color="inherit"
@@ -50,7 +50,6 @@ const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle, isDarkMode }) 
         sx={{
           flexGrow: 1,
           p: 3,
-          mt: 8, // Account for AppBar height
           minHeight: '100vh',
           backgroundColor: (theme) => theme.palette.background.default,
         }}

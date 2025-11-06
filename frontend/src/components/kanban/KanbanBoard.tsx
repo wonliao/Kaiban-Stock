@@ -8,15 +8,18 @@ import {
 } from '@mui/material';
 import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 import { useTranslation } from 'react-i18next';
-import { useAppDispatch, useAppSelector } from '../../hooks/useAppDispatch';
-import { 
-  Card as CardType, 
+import { useAppDispatch } from '../../hooks/useAppDispatch';
+import { useAppSelector } from '../../hooks/useAppSelector';
+import {
+  Card as CardType,
   updateCardStatus,
   fetchCardsStart,
   fetchCardsSuccess,
+  fetchCardsFailure,
 } from '../../store/slices/kanbanSlice';
 import KanbanColumn from './KanbanColumn';
 import CardDetailModal from './CardDetailModal';
+import kanbanService from '../../services/kanbanService';
 
 const KanbanBoard: React.FC = () => {
   const { t } = useTranslation();
@@ -28,86 +31,21 @@ const KanbanBoard: React.FC = () => {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
 
-  // Mock data for development - this will be replaced with API calls in later tasks
-  const mockCards: CardType[] = [
-    {
-      id: '1',
-      stockCode: '2330',
-      stockName: '台積電',
-      status: 'watch',
-      currentPrice: 580.00,
-      changePercent: 2.5,
-      volume: 25000000,
-      ma20: 575.00,
-      rsi: 65.5,
-      note: '等待突破前高',
-      createdAt: '2024-01-15T09:00:00Z',
-      updatedAt: '2024-01-15T14:30:00Z',
-    },
-    {
-      id: '2',
-      stockCode: '2317',
-      stockName: '鴻海',
-      status: 'readyToBuy',
-      currentPrice: 105.50,
-      changePercent: -1.2,
-      volume: 18500000,
-      ma20: 107.20,
-      rsi: 45.2,
-      createdAt: '2024-01-15T09:00:00Z',
-      updatedAt: '2024-01-15T14:25:00Z',
-    },
-    {
-      id: '3',
-      stockCode: '2454',
-      stockName: '聯發科',
-      status: 'hold',
-      currentPrice: 920.00,
-      changePercent: 3.8,
-      volume: 8200000,
-      ma20: 885.50,
-      rsi: 72.1,
-      note: '持續觀察RSI是否過熱',
-      createdAt: '2024-01-15T09:00:00Z',
-      updatedAt: '2024-01-15T14:20:00Z',
-    },
-    {
-      id: '4',
-      stockCode: '2412',
-      stockName: '中華電',
-      status: 'sell',
-      currentPrice: 125.50,
-      changePercent: 0.8,
-      volume: 5600000,
-      ma20: 124.80,
-      rsi: 58.3,
-      createdAt: '2024-01-15T09:00:00Z',
-      updatedAt: '2024-01-15T14:15:00Z',
-    },
-    {
-      id: '5',
-      stockCode: '2881',
-      stockName: '富邦金',
-      status: 'alerts',
-      currentPrice: 68.20,
-      changePercent: -3.2,
-      volume: 12800000,
-      ma20: 70.50,
-      rsi: 28.7,
-      note: '跌破重要支撐',
-      createdAt: '2024-01-15T09:00:00Z',
-      updatedAt: '2024-01-15T14:10:00Z',
-    },
-  ];
-
-  // Load mock data on component mount
+  // Load cards from API on component mount
   useEffect(() => {
-    dispatch(fetchCardsStart());
-    // Simulate API call delay
-    setTimeout(() => {
-      dispatch(fetchCardsSuccess(mockCards));
-    }, 1000);
-  }, [dispatch]); // mockCards is static, so it's safe to omit from dependencies
+    const loadCards = async () => {
+      dispatch(fetchCardsStart());
+      try {
+        const cards = await kanbanService.getCards();
+        dispatch(fetchCardsSuccess(cards as any));
+      } catch (error: any) {
+        console.error('[KanbanBoard] Failed to load cards:', error);
+        dispatch(fetchCardsFailure(error.message || '載入卡片失敗'));
+      }
+    };
+
+    loadCards();
+  }, [dispatch]);
 
   const columns = [
     { 
@@ -139,13 +77,13 @@ const KanbanBoard: React.FC = () => {
 
   // Filter cards based on search query and status filter
   const filteredCards = cards.filter(card => {
-    const matchesSearch = !searchQuery || 
+    const matchesSearch = !searchQuery ||
       card.stockCode.toLowerCase().includes(searchQuery.toLowerCase()) ||
       card.stockName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (card.note && card.note.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+
     const matchesStatus = !statusFilter || card.status === statusFilter;
-    
+
     return matchesSearch && matchesStatus;
   });
 
@@ -239,7 +177,7 @@ const KanbanBoard: React.FC = () => {
       <Typography variant="h4" component="h1" gutterBottom>
         {t('kanban.title', '股票看板')}
       </Typography>
-      
+
       <DragDropContext onDragEnd={handleDragEnd}>
         <Box sx={{ display: 'flex', gap: 2, overflowX: 'auto', pb: 2 }}>
           {columns.map((column) => (

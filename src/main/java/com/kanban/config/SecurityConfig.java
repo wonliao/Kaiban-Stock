@@ -46,16 +46,22 @@ public class SecurityConfig {
                 .requestMatchers("/api/health/**", "/actuator/**").permitAll()
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/error").permitAll()
-                
+
+                // WebSocket 端點
+                .requestMatchers("/ws/**").permitAll()
+
                 // API 端點需要認證
                 .requestMatchers("/api/kanban/**").authenticated()
                 .requestMatchers("/api/stocks/**").authenticated()
                 .requestMatchers("/api/charts/**").authenticated()
                 .requestMatchers("/api/watchlist/**").authenticated()
-                
+                .requestMatchers("/api/notifications/**").authenticated()
+                .requestMatchers("/api/rules/**").authenticated()
+                .requestMatchers("/api/rule-executions/**").authenticated()
+
                 // 管理員端點
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                
+
                 // 其他請求需要認證
                 .anyRequest().authenticated()
             )

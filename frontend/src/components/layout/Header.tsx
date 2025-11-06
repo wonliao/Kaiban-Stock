@@ -82,9 +82,10 @@ const Header: React.FC<HeaderProps> = ({ onThemeToggle, isDarkMode }) => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 0, mr: 2 }}>
           {t('app.title', '台股看板追蹤')}
         </Typography>
+        <Box sx={{ flexGrow: 1 }} />
         
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           {/* Language Selector */}

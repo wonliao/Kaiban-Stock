@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>看板除錯頁面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .debug-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .warning { background-color: #fff3cd; color: #856404; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <h1>台股看板除錯頁面</h1>
+    
+    <div class="debug-info">
+        <h2>檢查清單</h2>
+        <div id="checks"></div>
+    </div>
+
+    <div class="debug-info">
+        <h2>建議解決方案</h2>
+        <div id="solutions"></div>
+    </div>
+
+    <script>
+        const checks = [
+            {
+                name: "前端應用程式是否正在運行",
+                check: () => window.location.protocol !== 'file:',
+                solution: "請確保前端開發伺服器正在運行：npm start"
+            },
+            {
+                name: "React 開發工具是否可用",
+                check: () => window.__REACT_DEVTOOLS_GLOBAL_HOOK__,
+                solution: "安裝 React Developer Tools 瀏覽器擴充功能"
+            },
+            {
+                name: "Redux DevTools 是否可用",
+                check: () => window.__REDUX_DEVTOOLS_EXTENSION__,
+                solution: "安裝 Redux DevTools 瀏覽器擴充功能"
+            },
+            {
+                name: "本地儲存是否有認證資訊",
+                check: () => localStorage.getItem('token'),
+                solution: "請先登入系統以獲得認證 token"
+            },
+            {
+                name: "API 基礎 URL 是否設定",
+                check: () => true, // 無法在靜態頁面檢查
+                solution: "檢查 .env 檔案中的 REACT_APP_API_BASE_URL 設定"
+            }
+        ];
+
+        function runChecks() {
+            const checksDiv = document.getElementById('checks');
+            const solutionsDiv = document.getElementById('solutions');
+            
+            checks.forEach(({ name, check, solution }) => {
+                const result = check();
+                const statusDiv = document.createElement('div');
+                statusDiv.className = `status ${result ? 'success' : 'error'}`;
+                statusDiv.innerHTML = `
+                    <strong>${name}:</strong> ${result ? '✅ 通過' : '❌ 失敗'}
+                `;
+                checksDiv.appendChild(statusDiv);
+                
+                if (!result) {
+                    const solutionDiv = document.createElement('div');
+                    solutionDiv.className = 'status warning';
+                    solutionDiv.innerHTML = `<strong>解決方案:</strong> ${solution}`;
+                    solutionsDiv.appendChild(solutionDiv);
+                }
+            });
+        }
+
+        // 顯示當前狀態
+        function showCurrentState() {
+            const solutionsDiv = document.getElementById('solutions');
+            
+            const infoDiv = document.createElement('div');
+            infoDiv.className = 'status info';
+            infoDiv.innerHTML = `
+                <h3>當前狀態資訊：</h3>
+                <ul>
+                    <li><strong>當前 URL:</strong> ${window.location.href}</li>
+                    <li><strong>User Agent:</strong> ${navigator.userAgent}</li>
+                    <li><strong>本地儲存 Token:</strong> ${localStorage.getItem('token') ? '存在' : '不存在'}</li>
+                    <li><strong>本地儲存 Refresh Token:</strong> ${localStorage.getItem('refreshToken') ? '存在' : '不存在'}</li>
+                    <li><strong>語言設定:</strong> ${localStorage.getItem('language') || '未設定'}</li>
+                    <li><strong>主題設定:</strong> ${localStorage.getItem('theme') || '未設定'}</li>
+                </ul>
+            `;
+            solutionsDiv.appendChild(infoDiv);
+        }
+
+        // 執行檢查
+        runChecks();
+        showCurrentState();
+    </script>
+</body>
+</html>

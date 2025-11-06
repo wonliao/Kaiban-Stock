@@ -1,6 +1,7 @@
 package com.kanban.repository;
 
 import com.kanban.domain.entity.Card;
+import com.kanban.domain.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,7 +14,9 @@ import java.util.Optional;
 
 @Repository
 public interface CardRepository extends JpaRepository<Card, String> {
-    
+
+    List<Card> findByUser(User user);
+
     Page<Card> findByUserId(String userId, Pageable pageable);
     
     Page<Card> findByUserIdAndStatus(String userId, Card.CardStatus status, Pageable pageable);

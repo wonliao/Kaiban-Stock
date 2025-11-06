@@ -2,6 +2,7 @@ package com.kanban.controller;
 
 import com.kanban.domain.entity.Card;
 import com.kanban.dto.*;
+import com.kanban.security.UserPrincipal;
 import com.kanban.service.KanbanService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -27,9 +28,10 @@ public class KanbanController {
             @RequestParam(defaultValue = "updatedAt") String sort,
             @RequestParam(defaultValue = "DESC") String direction,
             Authentication authentication) {
-        
-        String userId = authentication.getName();
-        log.debug("GET /api/kanban/cards - user: {}, query: {}, status: {}, page: {}, size: {}", 
+
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
+        log.debug("GET /api/kanban/cards - user: {}, query: {}, status: {}, page: {}, size: {}",
                 userId, q, status, page, size);
         
         // Validate page size
@@ -54,8 +56,9 @@ public class KanbanController {
     public ResponseEntity<CardDto> getCard(
             @PathVariable String cardId,
             Authentication authentication) {
-        
-        String userId = authentication.getName();
+
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("GET /api/kanban/cards/{} - user: {}", cardId, userId);
         
         CardDto card = kanbanService.getCard(userId, cardId);
@@ -67,8 +70,9 @@ public class KanbanController {
             @PathVariable String cardId,
             @Valid @RequestBody CardUpdateRequest request,
             Authentication authentication) {
-        
-        String userId = authentication.getName();
+
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("PATCH /api/kanban/cards/{} - user: {}, request: {}", cardId, userId, request);
         
         CardDto updatedCard = kanbanService.updateCard(userId, cardId, request);
@@ -77,7 +81,8 @@ public class KanbanController {
     
     @GetMapping("/stats")
     public ResponseEntity<KanbanStatsDto> getKanbanStats(Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("GET /api/kanban/stats - user: {}", userId);
         
         KanbanStatsDto stats = KanbanStatsDto.builder()

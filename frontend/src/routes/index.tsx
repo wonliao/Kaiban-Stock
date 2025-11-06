@@ -25,17 +25,17 @@ const AppRoutes: React.FC<AppRoutesProps> = ({ onThemeToggle, isDarkMode }) => {
       
       <Routes>
         {/* Public routes */}
-        <Route 
-          path="/login" 
+        <Route
+          path="/login"
           element={
-            isAuthenticated ? <Navigate to="/dashboard" replace /> : <Login />
-          } 
+            isAuthenticated ? <Navigate to="/kanban" replace /> : <Login />
+          }
         />
-        <Route 
-          path="/register" 
+        <Route
+          path="/register"
           element={
-            isAuthenticated ? <Navigate to="/dashboard" replace /> : <Register />
-          } 
+            isAuthenticated ? <Navigate to="/kanban" replace /> : <Register />
+          }
         />
         
         {/* Protected routes */}
@@ -131,22 +131,22 @@ const AppRoutes: React.FC<AppRoutesProps> = ({ onThemeToggle, isDarkMode }) => {
         />
         
         {/* Default redirects */}
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
-            isAuthenticated ? 
-              <Navigate to="/dashboard" replace /> : 
+            isAuthenticated ?
+              <Navigate to="/kanban" replace /> :
               <Navigate to="/login" replace />
-          } 
+          }
         />
-        
-        <Route 
-          path="*" 
+
+        <Route
+          path="*"
           element={
-            isAuthenticated ? 
-              <Navigate to="/dashboard" replace /> : 
+            isAuthenticated ?
+              <Navigate to="/kanban" replace /> :
               <Navigate to="/login" replace />
-          } 
+          }
         />
       </Routes>
     </>

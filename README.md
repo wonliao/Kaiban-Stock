@@ -70,7 +70,7 @@ nohup ./mvnw spring-boot:run > logs/app.log 2>&1 &
 ```bash
 cd frontend
 npm install
-npm run dev
+npm start
 ```
 
 #### 5. 檢查服務狀態

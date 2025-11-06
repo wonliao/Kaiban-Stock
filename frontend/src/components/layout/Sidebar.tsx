@@ -20,7 +20,7 @@ import {
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 interface SidebarProps {
   open: boolean;

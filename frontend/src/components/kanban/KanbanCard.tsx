@@ -17,6 +17,7 @@ import {
 import { Draggable } from 'react-beautiful-dnd';
 import { useTranslation } from 'react-i18next';
 import { Card as CardType } from '../../store/slices/kanbanSlice';
+import MiniChart from '../chart/MiniChart';
 
 interface KanbanCardProps {
   card: CardType;
@@ -123,6 +124,11 @@ const KanbanCard: React.FC<KanbanCardProps> = ({ card, index, onCardClick }) => 
                   {formatPercent(card.changePercent)}
                 </Typography>
               </Box>
+            </Box>
+
+            {/* Mini Chart */}
+            <Box sx={{ mb: 1 }}>
+              <MiniChart stockCode={card.stockCode} height={50} period="7d" />
             </Box>
 
             {/* Technical Indicators */}

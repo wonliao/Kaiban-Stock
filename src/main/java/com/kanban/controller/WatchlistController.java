@@ -1,6 +1,7 @@
 package com.kanban.controller;
 
 import com.kanban.dto.*;
+import com.kanban.security.UserPrincipal;
 import com.kanban.service.WatchlistService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -22,7 +23,8 @@ public class WatchlistController {
     
     @GetMapping
     public ResponseEntity<List<WatchlistDto>> getUserWatchlists(Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("GET /api/watchlist - user: {}", userId);
         
         List<WatchlistDto> watchlists = watchlistService.getUserWatchlists(userId);
@@ -33,7 +35,8 @@ public class WatchlistController {
     public ResponseEntity<WatchlistDto> getWatchlist(
             @PathVariable String watchlistId,
             Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("GET /api/watchlist/{} - user: {}", watchlistId, userId);
         
         WatchlistDto watchlist = watchlistService.getWatchlist(userId, watchlistId);
@@ -44,7 +47,8 @@ public class WatchlistController {
     public ResponseEntity<WatchlistDto> createWatchlist(
             @Valid @RequestBody WatchlistCreateRequest request,
             Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("POST /api/watchlist - user: {}, name: {}", userId, request.getName());
         
         WatchlistDto watchlist = watchlistService.createWatchlist(userId, request);
@@ -55,7 +59,8 @@ public class WatchlistController {
     public ResponseEntity<SuccessResponse> deleteWatchlist(
             @PathVariable String watchlistId,
             Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("DELETE /api/watchlist/{} - user: {}", watchlistId, userId);
         
         watchlistService.deleteWatchlist(userId, watchlistId);
@@ -67,7 +72,8 @@ public class WatchlistController {
             @PathVariable String watchlistId,
             @Valid @RequestBody AddStockRequest request,
             Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("POST /api/watchlist/{}/stocks - user: {}, stock: {}", 
                 watchlistId, userId, request.getStockCode());
         
@@ -80,7 +86,8 @@ public class WatchlistController {
     public ResponseEntity<SuccessResponse> removeStock(
             @PathVariable String stockCode,
             Authentication authentication) {
-        String userId = authentication.getName();
+        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        String userId = userPrincipal.getId();
         log.debug("DELETE /api/watchlist/stocks/{} - user: {}", stockCode, userId);
         
         watchlistService.removeStockFromWatchlist(userId, stockCode);

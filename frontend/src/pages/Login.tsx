@@ -44,7 +44,7 @@ const Login: React.FC = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/dashboard');
+      navigate('/kanban');
     }
   }, [isAuthenticated, navigate]);
 
